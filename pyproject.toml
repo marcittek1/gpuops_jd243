@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marcittek1-gpuops_jd243"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别GPU 集群运维工程师·智能体的任务终止条件的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "marcittek1" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://marcittek1.github.io"
+Repository = "https://github.com/marcittek1/gpuops_jd243"
+Issues = "https://github.com/marcittek1/gpuops_jd243/issues"
+
+[project.scripts]
+gpuops_jd243 = "gpuops_jd243:main"
+
+[tool.setuptools]
+py-modules = ["gpuops_jd243"]
